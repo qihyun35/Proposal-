@@ -1,4 +1,4 @@
-# 💻 PROJECT TITLE: [INSERT YOUR SHARIAH-COMPLIANT PROJECT TITLE HERE]
+# 💻 PROJECT TITLE: [I-COURT : ONLINE SPORT FACILITY BOOKING SYSTEM]
 
 **Course Code & Name:** ITALEEMC 3305 Group Project: Complete Model-View-Controller Web Application  
 **Submission Due Date (Proposal):** 11/12/2025  
@@ -23,28 +23,34 @@
 
 ### 2.1 Title of the Project
 
-[Insert the finalized, specific title of your project here. Example: "The Global Halal Sourcing Portal"]
+[I-COURT : ONLINE SPORT FACILITY BOOKING SYSTEM]
 
 ### 2.2 Introduction to the Proposed Web Application
 
-[Write 2-3 paragraphs. Describe the context/problem (e.g., market gap, current inefficiencies) and how your MVC application solves it. State clearly which area (Healthcare, Education, Tourism, etc.) the project covers.]
+Sports facilities such as courts and training areas play an essential role in supporting physical development, recreational activities and community engagement within the International Islamic University Malaysia (IIUM). As the demand for these facilities continues to grow among students, staff and nearby communities, the need for an efficient and accessible reservation system has become increasingly important.
+
+	Currently, facility bookings at the Male Sports Complex (MSC) and Female Sports Complex (FSC) are often managed manually or through non-centralized methods, which can lead to miscommunication, inaccurate scheduling and unnecessary delays. To address these challenges, this project proposes the development of I-COURT, a centralized web-based booking system designed to streamline the reservation process for all MSC and FSC facilities.
+
+	The I-COURT system aims to provide a convenient, real-time and user-friendly platform that supports transparent facility availability, secure bookings and better management oversight. By digitalizing the entire reservation process, the system enhances administrative efficiency while improving user accessibility across the IIUM community.
 
 ### 2.3 Objective of the Proposed Web Application
 
-* **Objective 1:** To design and implement a secure, MVC-compliant web application using [Specify Technology, e.g., Laravel/Django/ASP.NET].
-* **Objective 2:** To provide [User Role, e.g., registered users] with the ability to [Core Action 1, e.g., submit and review Shariah-compliant business listings].
-* **Objective 3:** To enable [User Role, e.g., Administrators] to efficiently [Core Action 2, e.g., moderate content and manage user roles].
-* **Objective 4:** To ensure all features and content adhere strictly to **Shariah-compliant** guidelines.
+* **Objective 1:** To digitalize and centralize the booking process for MSC and FSC facilities through a user-friendly web platform.
+* **Objective 2:** To provide real-time availability updates to prevent double bookings and ensure accurate scheduling.
+* **Objective 3:** To improve accessibility for users that enabling students, staff, and nearby communities to make bookings anytime and anywhere.
+* **Objective 4:** To create a structured and transparent booking environment that supports fair use of sports facilities and reduces communication gaps between users and administrators.
 
 ### 2.4 Features and Functionalities of the Proposed Web Application
 
 | Feature | Description | User Role(s) |
 | :--- | :--- | :--- |
-| **User Authentication** | User registration, login, and secure session management. | All Users |
-| **Profile Management** | Users can view, update, and manage their personal and profile details. | Registered Users |
-| **[Core Feature A, e.g., Listing Submission]** | Users can submit new [type of content] by filling out a multi-step form. | Registered Users |
-| **[Core Feature B, e.g., Search & Filter]** | Advanced searching and filtering based on [key criteria, e.g., location, category, Halal certification]. | All Users |
-| **[Core Feature C, e.g., Admin Dashboard]**| Admins can view site metrics, approve pending listings, and ban users. | Administrator |
+| **User Registration & Login** | Provides a secure authentication system where users create an account and log in based on roles (Student, Staff, Community, Administrator). Access to pages is controlled according to role permissions. | Students, Staff, Community Users, Admin |
+| **Homepage** | Main navigation hub showing system overview, links to court listings, court details, booking page, and user dashboard. | Registered Users |
+| **Facility Listings (MSC & FSC)** | Displays all available sports facilities divided into Male Sports Centre (MSC) and Female Sports Centre (FSC). Both genders can book any facility due to space limitations. Each listing shows court details and availability. | Registered Users |
+| **Court Details Page** | Shows full information of a selected court: location, type, available timeslots, pricing, and rules. | Registered User |
+| **Booking Page**| Allows users to fill booking information, select facility, choose date & timeslot, and proceed with reservation. Payment confirmation is required to complete booking. | Registered Users |
+| **User Dashboard**| Displays personal bookings, upcoming reservations, booking history, cancellation option, and profile updates. | Registered Users |
+| **Admin Dashboard**| Enables administrators to monitor all bookings, approve or reject requests, check live facility availability, update court status, and manage user records. | Administrators |
 
 ---
 
