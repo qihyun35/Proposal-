@@ -61,5 +61,5 @@ The I-COURT system aims to provide a convenient, real-time and user-friendly pla
 
 
 ```markdown
-![Entity Relationship Diagram](assets/diagrams/erd.png)
+![Entity Relationship Diagram](assets/diagrams/erd project.png)
 ![Sequence Diagram for User Registration](assets/diagrams/sequence_registration.png)
