@@ -1,0 +1,54 @@
+# USER & AUTH TABLES SCHEME
+
+---
+### User Roles:
+- `student` (IIUM students)
+- `staff` (IIUM staff) 
+- `admin` (court managers)
+
+### User Information:
+- `name` (required)
+- `email` (required, unique)
+- `password` (required, encrypted)
+- `phone` (required for booking)
+- `matric_no` (optional, for students)
+
+### Password Handling:
+- Store encrypted passwords only
+- Use Laravel's built-in `Hash::make()`
+---
+
+### TABLE: users
+```sql
+CREATE TABLE users (
+    id BIGINT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(255) NOT NULL,
+    email VARCHAR(255) UNIQUE NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    phone VARCHAR(20) NOT NULL,
+    matric_no VARCHAR(20) NULL,
+    role ENUM('student', 'staff', 'admin') DEFAULT 'student',
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+CREATE TABLE password_resets (
+    email VARCHAR(255) NOT NULL,
+    token VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP NULL,
+    INDEX (email)
+);
+
+CREATE TABLE sessions (
+    id VARCHAR(255) PRIMARY KEY,
+    user_id BIGINT NULL,
+    ip_address VARCHAR(45) NULL,
+    user_agent TEXT NULL,
+    payload LONGTEXT NOT NULL,
+    last_activity INT NOT NULL,
+    INDEX (user_id),
+    INDEX (last_activity)
+);
+
+
+
